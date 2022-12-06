@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulario</title>
+</head>
+
+<body>
+  <h1>Trybe Trip</h1>
+  <div id="main-container">
+    <div class="container-line">
+      <label for="nome">
+        Nome: <input type="text" name="nome" placeholder="Escreva seu nome aqui" min="10" max="40">
+      </label>
+      <br>
+      <br>
+      <label for="email">
+        Email: <input type="email" name="email" placeholder="Escreva seu email aqui" min="10" max="50">
+      </label>
+    </div>
+    <br>
+    <div class="container-line">
+      <label for="">
+        <input type="radio" name="opcao1" id="radio" value="Opção 1" placeholder="Opções" title="radioOp"> Opção 1
+      </label>
+      <label for="radio">
+        <input type="radio" name="opcao2" id="radio2" value="Opção 1" placeholder="Opções"> Opção 2
+      </label>
+      <label for="radio">
+        <input type="radio" name="opcao3" id="radio3" value="Opção 1" placeholder="Opções"> Opção 3
+      </label>
+      <label for="radio">
+        <input type="radio" name="opcao4" id="radio4" value="Opção 1" placeholder="Opções"> Opção 4
+      </label>
+    </div>
+    <br>
+    Espaço para digitar a resposta:
+    <div class="container-line">
+      <label for="info">
+        <textarea name="info" id="info" cols="30" rows="10" title="trip" maxlength="500">  
+        </textarea>
+      </label>
+    </div>
+    <div class="container-line">
+      <label for="date">Data: 
+      <input type="date" name="date" id="date">
+      </label>
+    <div class="container-line">
+      <label for="alowone">Concordo 1 
+      <input type="checkbox" name="concordo1" id="alowone"> 
+    </label>
+    <br>
+    <label for="alowtwo">Concordo 2
+      <input type="checkbox" name="concordo2" id="alowtwo"> 
+    </label>
+    </div>
+    </div>
+  </div>
+  <button id="send" type="submit" formmethod="get"  title="Send">Enviar</button>
+  <button id="clear" type="reset" title="Clear">Apagar</button>
+  <script src="script.js"></script>
+</body>
+
+</html>

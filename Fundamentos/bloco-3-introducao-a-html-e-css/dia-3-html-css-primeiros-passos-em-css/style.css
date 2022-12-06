@@ -1,0 +1,78 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    border: 3px solid;
+    background-image: url(); 
+    background-size: cover;
+    background-position: 50% 25%;
+    padding: 60px 30px 40px;
+}
+#header-content{
+    border: 3px solid red;
+    max-width: 660px;
+
+}
+#heard-content p{
+    margin: 2em 0;
+    
+}
+#header-text{
+    width: 80%;
+}
+#market{
+    border: 3px red;
+    padding: 30px 64px;
+    text-align: center;
+}
+market-text{
+    border: 3px blue;
+    width: 80%;
+    margin: 0 auto;
+}
+#market-text p{
+    margin: 2em;
+}
+#testmonials{
+    border: 3px solid blue;
+    padding: 30px;
+}
+.studant-testimonials{
+    border: 3px solid red;
+    width: 30%;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+.studant-testimonials p{
+    margin: 1em;
+}
+#learnig{
+    border:  3px red;
+    padding: 6em;
+    background-color: #f5f5f5;
+}
+#learning-left{
+float: left;
+max-width: 45%;
+}
+leaning-right{
+float: right;
+}
+#footer{
+    border: 3px green;
+    clear: both;
+    padding: 6em;
+    text-align: center;
+    margin: 6em;
+}
+#footer p {
+    margin: 2em;
+    padding: 6em;
+}
+li{
+    list-style-type: square;
+}
