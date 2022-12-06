@@ -1,0 +1,9 @@
+docker container run --name container-mysql -e MYSQL_ROOT_PASSWORD=senha-mysql -d -p 3306:3306 mysql
+docker container stop container-mysql
+docker container start container-mysql
+## Deletando seu container
+Se agora você não quer mais usar esse container e quer removê-lo, pare o container e execute o comando abaixo:
+## quando o container estiver parado
+docker container rm container-mysql
+docker exec -it container-mysql bash
+mysql -u root -p
