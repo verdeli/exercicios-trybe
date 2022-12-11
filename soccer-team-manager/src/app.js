@@ -4,7 +4,7 @@ const activities = require('./data/activities');
 
 const app = express(); // instancia de um servidor
 
-// app.use(express.json());
+app.use(express.json());
 
 app.get('/activities', (request, response) => {
   console.log('Listando tarefas ...');  
