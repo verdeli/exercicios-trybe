@@ -1,5 +1,7 @@
 //Exercicio 01
 
+// const { fstat } = require('fs');
+
 // function calculateIMC (){
 // const readline = require('readline-sync');
 
@@ -50,59 +52,57 @@
 
 //exercicio 1 de uma outra maneira
 
-const IMC = {
-  'Abaixo do peso(magreza)':{
-    min: 0,
-    max: 18.4,
-  },
-  'Peso normal': {
-    min: 18.5,
-    max: 24.9,
-  }, 
-  'Acima do peso (sobrepeso)': {
-    min: 25,
-    max: 29.9,
-  },
-  'Obesidade grau I': {
-    min: 30,
-    max: 34.9,
-  },
-  'Obesidade grau II': {
-    min: 35,
-    max: 39.9,
-  },
-  'Obesidade grau III e IV': {
-    min: 40,
-    max: 600,
-  },
-}
+// const IMC = {
+//   'Abaixo do peso(magreza)':{
+//     min: 0,
+//     max: 18.4,
+//   },
+//   'Peso normal': {
+//     min: 18.5,
+//     max: 24.9,
+//   }, 
+//   'Acima do peso (sobrepeso)': {
+//     min: 25,
+//     max: 29.9,
+//   },
+//   'Obesidade grau I': {
+//     min: 30,
+//     max: 34.9,
+//   },
+//   'Obesidade grau II': {
+//     min: 35,
+//     max: 39.9,
+//   },
+//   'Obesidade grau III e IV': {
+//     min: 40,
+//     max: 600,
+//   },
+// }
 
-function calculaIMC(){
+// function calculaIMC(){
   
-  const readline = require('readline-sync');
-  
-  const weight = readline.question('Qual o seu peso: ');
-  const height = readline.question('Qual a sua altura: ');
+//   const readline = require('readline-sync');
 
-  const imc = (weight / (height*height)).toFixed(2);
+//   const weight = readline.question('Qual o seu peso: ');
+//   const height = readline.question('Qual a sua altura: ');
 
-  const statusIMC = Object.keys(IMC);
+//   const imc = (weight / (height*height)).toFixed(2);
+
+//   const statusIMC = Object.keys(IMC);
   
-  const statusUser = statusIMC.find((status) =>{
+//   const statusUser = statusIMC.find((status) =>{
     
-    const {min, max} = IMC[status]; 
+//     const {min, max} = IMC[status]; 
     
-    return imc >= min && imc <= max;
+//     return imc >= min && imc <= max;
     
-  });
+//   });
   
-  console.log(statusUser);
+//   console.log(statusUser);
   
-}
+// }
 
-calculaIMC();
+// calculaIMC();
 
+//exercicio 6
 
-
-
-//exercicio 3
