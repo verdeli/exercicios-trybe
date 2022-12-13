@@ -6,6 +6,7 @@ const validationRating = require('./middleware/validationRating');
 const validationDifficulty = require('./middleware/validationDifficulty');
 
 const generateToken = require('./utils/generateToken');
+const validadeToken = require('./middleware/validadeToken');
 
 const express = require('express');
 const app = express();
@@ -14,7 +15,7 @@ app.use(express.json());
 
 
 
-app.post('/activities', validationName, validationPrice, validationDescription, validationCreatedAt, validationRating, validationDifficulty, (require, response)=> { 
+app.post('/activities', validadeToken, validationName, validationPrice, validationDescription, validationCreatedAt, validationRating, validationDifficulty, (require, response)=> { 
   const { name, price, description: {rating, difficulty, createdAt } } = require.body;
   
   const newActivities = {
@@ -31,18 +32,18 @@ app.post('/activities', validationName, validationPrice, validationDescription, 
     // return response.status(201).json(newActivities);
   })
 
-  app.post('/sign', (require, response)=>{
+  app.post('/signup', (require, response) => {
+
     const { email, password, firstName, phone } = require.body;
 
     const newUser = {
       email,
       password,
       firstName,
-      phone,
-      token: generateToken
+      phone
     };
-    
-    return response.status(200).json({ "message": "Usuário cadastrado com sucesso!" });
+
+    return response.status(200).json( { message: generateToken() } );
   })
 
 
