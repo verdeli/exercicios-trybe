@@ -1,0 +1,17 @@
+{
+  "name": "leicture4.4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/home/verdeli/Trybe-Exercicios/exercicios-trybe/BackEnd/04/leicture4.4/src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ."
+  },
+  "keywords": [],
+  "author": "Verdeli",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
